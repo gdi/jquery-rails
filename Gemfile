@@ -1,16 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'rails', '~>4.1.16'
+
 gem "mime-types", "< 3", group: :test
 
-if RUBY_VERSION >= '2.2.2'
-  gem 'rails'
-  gem 'rack'
-  gem 'json', '>= 2'
-else
-  gem 'rails', '~> 4.2.0'
-  gem 'rack', '~>1.6'
-  gem 'json', '~> 1.8.0'
-end
+gem 'rack', '~>1.6'
+gem 'json', '~> 1.8.0'
 
 if RUBY_VERSION >= '2.1'
   gem 'nokogiri'
